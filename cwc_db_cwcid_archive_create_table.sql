@@ -9,3 +9,8 @@ phone varchar(50) not null,
 first_name varchar(50) not null,
 last_name varchar(50) not null
 );
+
+alter table cwcid_archive
+add constraint Family_ID_FK 
+foreign key (Family_ID)
+references Attendee_family(Family_ID)
